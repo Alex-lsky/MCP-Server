@@ -11,6 +11,7 @@
     "build"
   ],
   "scripts": {
+    "start": "node build/index.js",
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "prepare": "npm run build",
     "watch": "tsc --watch",
@@ -19,7 +20,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "0.6.0",
     "axios": "^1.7.9",
-    "jina-ai-server": "file:"
+    "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
